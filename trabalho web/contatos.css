@@ -1,0 +1,188 @@
+
+body {/* Remove a margem padrão do body e define uma cor de fundo para a página */
+    margin: 0;
+    background-color: #e1cedf;
+}
+
+.container {/* Define que os elementos dentro do container serão organizados em grid */
+    display: grid;
+}
+
+header {/* Define o posição e cor de fundo do cabeçalho */
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #c90d94;
+}
+
+.menu {/* Define o posição do menu*/
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.imagem {/* Define o posição da imagem*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.principal {/* Define a posiçao do conteudo principal*/
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 158px;
+    padding-right: 601px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+
+
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+    color: white;
+    text-align: center;
+}
+
+ul {/* Define um layout flexível para os itens da lista no menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 16px;
+    color: #cf2f2f;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #dc16ab 3px;
+}
+
+li {
+    float: left;
+}
+
+a:hover, input[type=submit]:hover { /* Ao passar o cursor por cima*/
+    background-color: #722a2a;
+    color: rgb(232, 12, 225);
+}
+
+
+.formulario {/*estilo formulário de contato*/
+    padding: 5px 4%;
+}    
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}    
+
+input {
+    width: 100%;    
+    background-color: #c90d947b;
+    border: 0;
+    outline: 0;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: rgb(18, 10, 17);
+    margin: 10px 0px;
+
+}
+
+input[type=text] {
+    height: 20px;
+}    
+
+input::placeholder{
+    color: #722a2a;
+
+
+}
+h2{
+    margin-top: auto;
+    text-align: center;
+    padding: 5px 10px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+textarea{
+    justify-content: center;
+    resize: none;
+    width: 100%;    
+    background-color: #c90d947b;
+    border: 0;
+    outline: 0;
+    padding: 50px 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: rgb(18, 10, 17);
+    margin: 10px 0px;
+    
+
+}
+
+textarea::placeholder{
+    color: #722a2a;
+
+}
+
+.botao{
+    margin-top: 20px;
+    padding-left: 125px;
+    padding-right: 10px;
+    
+}
+
+
+input[type=submit] {
+    width: 120px;
+    background-color: #c90d94; 
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    
+    
+    
+}
+
+   
+@media only screen and (max-width: 767px) {/* Estilos específicos para telas menores, como celulares */
+    .figura {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .imagem {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+   
+ 
+    
+   
+}
