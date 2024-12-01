@@ -1,0 +1,92 @@
+body {/* Remove a margem padrão do body e define uma cor de fundo para a página */
+    margin: 0;
+    background-color: #e1cedf;
+}
+
+.container {/* Define que os elementos dentro do container serão organizados em grid */
+    display: grid;
+}
+
+header {/* Define o posição e cor de fundo do cabeçalho */
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #c90d94;
+}
+
+.menu {/* Define o posição do menu*/
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.imagem {/* Define o posição da imagem*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.principal {/* Define a posiçao do conteudo principal*/
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 300px;
+    font-size: 20px;
+    text-align: justify;
+    
+
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+    color: white;
+    text-align: center;
+}
+
+ul {/* Define um layout flexível para os itens da lista no menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 16px;
+    color: #cf2f2f;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #dc16ab 3px;
+}
+
+li {
+    float: left;
+}
+
+a:hover {
+    background-color: #722a2a;
+    color: rgb(232, 12, 225);
+}
+
+   
+@media only screen and (max-width: 767px) {/* Estilos específicos para telas menores, como celulares */
+    .figura {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .imagem {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+}
